@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  java-app:
+    image: java-dockerized-app
+    container_name: java-dockerized-app-container
+    ports:
+      - "8080:8080"
+    build: .
